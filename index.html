@@ -28,8 +28,8 @@
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.66683 13.9999C11.1646 13.9999 14.0002 11.1644 14.0002 7.66659C14.0002 4.16878 11.1646 1.33325 7.66683 1.33325C4.16903 1.33325 1.3335 4.16878 1.3335 7.66659C1.3335 11.1644 4.16903 13.9999 7.66683 13.9999Z"
-              stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M14.6668 14.6666L13.3335 13.3333" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14.6668 14.6666L13.3335 13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
               stroke-linejoin="round" />
           </svg>
         </button>
@@ -76,7 +76,10 @@
             <a href="/category?slug=Sofas" class="catalog__link">Sofas</a>
           </li>
           <li class="catalog__item">
-            <a href="/category?slug=Schränke" class="catalog__link">Schränke</a>
+            <a href="/category?slug=Schränke" class="catalog__link catalog__link_active">Sessel</a>
+          </li>
+          <li class="catalog__item">
+            <a href="/category?slug=Schränke" class="catalog__link ">Schränke</a>
           </li>
           <li class="catalog__item">
             <a href="/category?slug=Stühle" class="catalog__link">Stühle</a>
@@ -103,20 +106,20 @@
       </div>
     </div>
 
-    <div class="breadcrumps">
+    <div class="breadcrumbs">
       <div class="container">
-        <ul class="breadcrumps__list">
-          <li class="breadcrumps__item">
-            <a href="/" class="breadcrumps__link">Startseite</a>
-            <span class="breadcrumps__separator">&gt;</span>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/" class="breadcrumbs__link">Startseite</a>
+            <span class="breadcrumbs__separator">&gt;</span>
           </li>
-          <li class="breadcrumps__item">
-            <a href="/category?/slug=Sessel" class="breadcrumps__link">Sessel</a>
-            <span class="breadcrumps__separator">&gt;</span>
+          <li class="breadcrumbs__item">
+            <a href="/category?/slug=Sessel" class="breadcrumbs__link">Sessel</a>
+            <span class="breadcrumbs__separator">&gt;</span>
           </li>
-          <li class="breadcrumps__item">
-            <a class="breadcrumps__link">Sessel mit Armlehnen</a>
-            <span class="breadcrumps__separator">&gt;</span>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Sessel mit Armlehnen</a>
+            <span class="breadcrumbs__separator">&gt;</span>
           </li>
         </ul>
       </div>
@@ -434,16 +437,16 @@
 
               <input type="text" class="form-order__input" name="address" placeholder="Lieferadresse">
 
-              <textarea class="form-order-textarea" name="comments" placeholder="Kommentar zur Bestellung"></textarea>
+              <textarea class="form-order__textarea" name="comments" placeholder="Kommentar zur Bestellung"></textarea>
             </fieldset>
             <fieldset class="form-order__fieldset form-order__fieldset_radio">
               <legend class="form-order__legend">Lieferung</legend>
 
-              <label for="" class="form-order__laber radio">
+              <label for="" class="form-order__label radio">
                 <input class="radio__input" type="radio" name="deliveryType" value="delivery">Lieferung
               </label>
 
-              <label for="" class="form-order__laber radio">
+              <label for="" class="form-order__label radio">
                 <input class="radio__input" type="radio" name="deliveryType" value="pickup">Selbstabholung
               </label>
 
@@ -452,11 +455,11 @@
             <fieldset class="form-order__fieldset form-order__fieldset_radio">
               <legend class="form-order__legend">Zahlung</legend>
 
-              <label for="" class="form-order__laber radio">
+              <label for="" class="form-order__label radio">
                 <input class="radio__input" type="radio" name="paymentType" value="card">Zahlung mit Karte
               </label>
 
-              <label for="" class="form-order__laber radio">
+              <label for="" class="form-order__label radio">
                 <input class="radio__input" type="radio" name="paymentType" value="cash">Barzahlung bei Lieferung
               </label>
 
