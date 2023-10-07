@@ -30,6 +30,20 @@ body {
 
 main {
   flex-wrap: 1;
+  padding-bottom: 80px;
+
+  @media (min-width: 580px) {
+    padding: 0 29px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: 820px) {
+    padding: 0 43px;
+  }
+
+  @media (min-width: 1120px) {
+    padding: 0 92px;
+  }
 }
 
 img,
